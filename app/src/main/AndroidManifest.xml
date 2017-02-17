@@ -1,0 +1,390 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.jimmysapp.mybradapp" >
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+
+    <uses-feature
+        android:glEsVersion="0x00020000"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme"
+         >
+        <meta-data
+            android:name="com.google.android.gms.version"
+            android:value="@integer/google_play_services_version" />
+
+        <activity
+            android:name=".Login"
+            android:clearTaskOnLaunch="true"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".Mainform"
+            android:label="@string/title_activity_mainform" >
+        </activity>
+        <activity
+            android:name=".Uobguideform"
+            android:label="@string/title_activity_uobguideform" >
+        </activity>
+        <activity
+            android:name=".Aboutuob"
+            android:label="@string/title_activity_aboutuob" >
+        </activity>
+        <activity
+            android:name=".Cafes"
+            android:label="@string/title_activity_cafes" >
+        </activity>
+        <activity
+            android:name=".Richmond"
+            android:label="@string/title_activity_richmond" >
+        </activity>
+        <activity
+            android:name=".horton"
+            android:label="@string/title_activity_horton" >
+        </activity>
+        <activity
+            android:name=".chesham"
+            android:label="@string/title_activity_chesham" >
+        </activity>
+        <activity
+            android:name=".phoenix"
+            android:label="@string/title_activity_phoenix" >
+        </activity>
+        <activity
+            android:name=".ashfield"
+            android:label="@string/title_activity_ashfield" >
+        </activity>
+        <activity
+            android:name=".norcroft"
+            android:label="@string/title_activity_norcroft" >
+        </activity>
+        <activity
+            android:name=".library"
+            android:label="@string/title_activity_library" >
+        </activity>
+        <activity
+            android:name=".sportsleisure"
+            android:label="@string/title_activity_sportsleisure" >
+        </activity>
+        <activity
+            android:name=".thegreen"
+            android:label="@string/title_activity_thegreen" >
+        </activity>
+        <activity
+            android:name=".studentcentral"
+            android:label="@string/title_activity_studentcentral" >
+        </activity>
+        <activity
+            android:name=".supermarkets"
+            android:label="@string/title_activity_supermarkets" >
+        </activity>
+        <activity
+            android:name=".fastfood"
+            android:label="@string/title_activity_fastfood" >
+        </activity>
+        <activity
+            android:name=".clubsbars"
+            android:label="@string/title_activity_clubsbars" >
+        </activity>
+        <activity
+            android:name=".clothing"
+            android:label="@string/title_activity_clothing" >
+        </activity>
+        <activity
+            android:name=".starbucks"
+            android:label="@string/title_activity_starbucks" >
+        </activity>
+        <activity
+            android:name=".costacoffee"
+            android:label="@string/title_activity_costacoffee" >
+        </activity>
+        <activity
+            android:name=".cafeeast"
+            android:label="@string/title_activity_cafeeast" >
+        </activity>
+        <activity
+            android:name=".richmondcoffeeshop"
+            android:label="@string/title_activity_richmondcoffeeshop" >
+        </activity>
+        <activity
+            android:name=".register"
+            android:label="@string/title_activity_register">
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyAsI3LkGWurzbq6bosApAbqiF0hFEM-jQE" />
+
+        <activity
+            android:name=".sainsburys"
+            android:label="@string/title_activity_sainsburys" >
+        </activity>
+        <activity
+            android:name=".tesco"
+            android:label="@string/title_activity_tesco" >
+        </activity>
+        <activity
+            android:name=".nisalocal"
+            android:label="@string/title_activity_nisalocal" >
+        </activity>
+        <activity
+            android:name=".premier"
+            android:label="@string/title_activity_premier" >
+        </activity>
+        <activity
+            android:name=".dailynews"
+            android:label="@string/title_activity_dailynews" >
+        </activity>
+        <activity
+            android:name=".subway"
+            android:label="@string/title_activity_subway" >
+        </activity>
+        <activity
+            android:name=".burgertime"
+            android:label="@string/title_activity_burgertime" >
+        </activity>
+        <activity
+            android:name=".delichez"
+            android:label="@string/title_activity_delichez" >
+        </activity>
+        <activity
+            android:name=".dunkers"
+            android:label="@string/title_activity_dunkers" >
+        </activity>
+        <activity
+            android:name=".mylahore"
+            android:label="@string/title_activity_mylahore" >
+        </activity>
+        <activity
+            android:name=".omars"
+            android:label="@string/title_activity_omars" >
+        </activity>
+        <activity
+            android:name=".royals"
+            android:label="@string/title_activity_royals" >
+        </activity>
+        <activity
+            android:name=".chickencottage"
+            android:label="@string/title_activity_chickencottage" >
+        </activity>
+        <activity
+            android:name=".caspianpizza"
+            android:label="@string/title_activity_caspianpizza" >
+        </activity>
+        <activity
+            android:name=".dixys"
+            android:label="@string/title_activity_dixys" >
+        </activity>
+        <activity
+            android:name=".oasis"
+            android:label="@string/title_activity_oasis" >
+        </activity>
+        <activity
+            android:name=".cyrus"
+            android:label="@string/title_activity_cyrus" >
+        </activity>
+        <activity
+            android:name=".flaresreflex"
+            android:label="@string/title_activity_flaresreflex" >
+        </activity>
+        <activity
+            android:name=".tokyo"
+            android:label="@string/title_activity_tokyo" >
+        </activity>
+        <activity
+            android:name=".redsquare"
+            android:label="@string/title_activity_redsquare" >
+        </activity>
+        <activity
+            android:name=".thesirtitus"
+            android:label="@string/title_activity_thesirtitus" >
+        </activity>
+        <activity
+            android:name=".tequila"
+            android:label="@string/title_activity_tequila" >
+        </activity>
+        <activity
+            android:name=".revolution"
+            android:label="@string/title_activity_revolution" >
+        </activity>
+        <activity
+            android:name=".fnd"
+            android:label="@string/title_activity_fnd" >
+        </activity>
+        <activity
+            android:name=".kirkgatemall"
+            android:label="@string/title_activity_kirkgatemall" >
+        </activity>
+        <activity
+            android:name=".jdsports"
+            android:label="@string/title_activity_jdsports" >
+        </activity>
+        <activity
+            android:name=".tkmax"
+            android:label="@string/title_activity_tkmax" >
+        </activity>
+        <activity
+            android:name=".next"
+            android:label="@string/title_activity_next" >
+        </activity>
+        <activity
+            android:name=".topshop"
+            android:label="@string/title_activity_topshop" >
+        </activity>
+        <activity
+            android:name=".primark"
+            android:label="@string/title_activity_primark" >
+        </activity>
+        <activity
+            android:name=".riverisland"
+            android:label="@string/title_activity_riverisland" >
+        </activity>
+        <activity
+            android:name=".bank"
+            android:label="@string/title_activity_bank" >
+        </activity>
+        <activity
+            android:name=".sportsdirect"
+            android:label="@string/title_activity_sportsdirect" >
+        </activity>
+        <activity
+            android:name=".argos"
+            android:label="@string/title_activity_argos" >
+        </activity>
+        <activity
+            android:name=".postoffices"
+            android:label="@string/title_activity_postoffices" >
+        </activity>
+        <activity
+            android:name=".universitypost"
+            android:label="@string/title_activity_universitypost" >
+        </activity>
+        <activity
+            android:name=".sunbridgepost"
+            android:label="@string/title_activity_sunbridgepost" >
+        </activity>
+        <activity
+            android:name=".taxi"
+            android:label="@string/title_activity_taxi" >
+        </activity>
+        <activity
+            android:name=".allover"
+            android:label="@string/title_activity_allover" >
+        </activity>
+        <activity
+            android:name=".leaptaxi"
+            android:label="@string/title_activity_leaptaxi" >
+        </activity>
+        <activity
+            android:name=".douglastaxi"
+            android:label="@string/title_activity_douglastaxi" >
+        </activity>
+        <activity
+            android:name=".opticians"
+            android:label="@string/title_activity_opticians" >
+        </activity>
+        <activity
+            android:name=".specsaversopt"
+            android:label="@string/title_activity_specsaversopt" >
+        </activity>
+        <activity
+            android:name=".bootsopt"
+            android:label="@string/title_activity_bootsopt" >
+        </activity>
+        <activity
+            android:name=".sidneyopt"
+            android:label="@string/title_activity_sidneyopt" >
+        </activity>
+        <activity
+            android:name=".cityeyeopt"
+            android:label="@string/title_activity_cityeyeopt" >
+        </activity>
+        <activity
+            android:name=".adminactivity"
+            android:label="@string/title_activity_adminactivity" >
+        </activity>
+        <activity
+            android:name=".pemberton"
+            android:label="@string/title_activity_pemberton" >
+        </activity>
+        <activity
+            android:name=".atrium"
+            android:label="@string/title_activity_atrium" >
+        </activity>
+        <activity
+            android:name=".interchange"
+            android:label="@string/title_activity_interchange" >
+        </activity>
+        <activity
+            android:name=".forstersquare"
+            android:label="@string/title_activity_forstersquare" >
+        </activity>
+        <activity
+            android:name=".bustation"
+            android:label="@string/title_activity_bustation" >
+        </activity>
+        <activity
+            android:name=".transport"
+            android:label="@string/title_activity_transport" >
+        </activity>
+        <activity
+            android:name=".tescoexpress"
+            android:label="@string/title_activity_tescoexpress" >
+        </activity>
+        <activity
+            android:name=".morissons"
+            android:label="@string/title_activity_morissons" >
+        </activity>
+        <activity
+            android:name=".lidl"
+            android:label="@string/title_activity_lidl" >
+        </activity>
+        <activity
+            android:name=".aldi"
+            android:label="@string/title_activity_aldi" >
+        </activity>
+        <activity
+            android:name=".forstersquareshops"
+            android:label="@string/title_activity_forstersquareshops" >
+        </activity>
+        <activity
+            android:name=".sportsdirectforster"
+            android:label="@string/title_activity_sportsdirectforster" >
+        </activity>
+        <activity
+            android:name=".mothercare"
+            android:label="@string/title_activity_mothercare" >
+        </activity>
+        <activity
+            android:name=".currys"
+            android:label="@string/title_activity_currys" >
+        </activity>
+        <activity
+            android:name=".asda"
+            android:label="@string/title_activity_asda" >
+        </activity>
+        <activity
+            android:name=".argosforster"
+            android:label="@string/title_activity_argosforster" >
+        </activity>
+        <activity
+            android:name=".admin"
+            android:label="@string/title_activity_admin" >
+        </activity>
+    </application>
+
+</manifest>

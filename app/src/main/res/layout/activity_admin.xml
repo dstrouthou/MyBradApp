@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="com.jimmysapp.mybradapp.admin"
+    android:background="@drawable/backc1"
+    android:orientation="vertical">
+
+    <HorizontalScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/horizontalScrollView"
+        android:layout_above="@+id/optFormbtn">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="228dp"
+            android:orientation="horizontal"
+            android:layout_above="@+id/optFormbtn"
+            android:id="@+id/linearLayout">
+            <ListView
+                android:layout_width="800dp"
+                android:layout_height="220dp"
+                android:id="@+id/adminlistview1"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginBottom="50dp"
+                android:divider="#ffffffff"
+                android:dividerHeight="1dp"
+                android:fastScrollAlwaysVisible="false"
+                android:fastScrollEnabled="false"
+                android:layout_alignRight="@+id/adminlistview1"
+                android:layout_alignEnd="@+id/adminlistview1"
+                android:clickable="false"
+                android:longClickable="true"
+                android:choiceMode="singleChoice" />
+            </LinearLayout>
+    </HorizontalScrollView>
+
+    <Button
+        android:layout_width="170dp"
+        android:layout_height="50dp"
+        android:text="Delete"
+        android:id="@+id/deletebtn"
+        android:textColor="#ff98ff3f"
+        android:textSize="20dp"
+        android:onClick="onClickDelete"
+        android:background="@drawable/button"
+        android:longClickable="true"
+        android:layout_alignParentBottom="true"
+        android:layout_toLeftOf="@+id/optFormbtn"
+        android:layout_toStartOf="@+id/optFormbtn"
+        android:layout_marginRight="39dp"
+        android:layout_marginEnd="39dp" />
+
+    <Button
+        android:layout_width="170dip"
+        android:layout_height="50dp"
+        android:text="Options Form"
+        android:id="@+id/optFormbtn"
+        android:textColor="#ff98ff3f"
+        android:textSize="20dp"
+        android:onClick="onClickOptions"
+        android:background="@drawable/button"
+        android:layout_gravity="right"
+        android:layout_marginRight="97dp"
+        android:layout_marginEnd="97dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignRight="@+id/horizontalScrollView"
+        android:layout_alignEnd="@+id/horizontalScrollView" />
+
+</RelativeLayout>

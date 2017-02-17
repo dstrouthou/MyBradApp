@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/txtName"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="80dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/txtSurname"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtName"
+        android:layout_toEndOf="@+id/txtName"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/txtUsername"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtSurname"
+        android:layout_toEndOf="@+id/txtSurname"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/txtPassword"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtUsername"
+        android:layout_toEndOf="@+id/txtUsername"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/txtEmail"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtPassword"
+        android:layout_toEndOf="@+id/txtPassword"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+
+    <TextView
+        android:layout_width="200dip"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:text="Medium Text"
+        android:id="@+id/txtEmail1"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/txtEmail"
+        android:layout_toEndOf="@+id/txtEmail"
+        android:textColor="#ffffff"
+        android:textSize="15dp" />
+</LinearLayout>
